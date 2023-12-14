@@ -1,7 +1,6 @@
 package hello.demo.order;
 
 import hello.demo.discount.DiscoundPolicy;
-import hello.demo.discount.FixDiscountPolicy;
 import hello.demo.member.Member;
 import hello.demo.member.MemberRepository;
 import hello.demo.member.MemoryMemberRepository;
@@ -9,7 +8,7 @@ import hello.demo.member.MemoryMemberRepository;
 public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository memberRepository = new MemoryMemberRepository();
-    private final DiscoundPolicy discountPolicy = new FixDiscountPolicy(); 
+    private DiscoundPolicy discountPolicy;
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
@@ -18,6 +17,4 @@ public class OrderServiceImpl implements OrderService {
 
         return new Order(memberId, itemName, itemPrice, discountPrice);
     }
-    
-    
 }
