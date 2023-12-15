@@ -1,14 +1,15 @@
 package hello.demo.order;
 
+import hello.demo.AppConfig;
 import hello.demo.member.Grade;
 import hello.demo.member.Member;
 import hello.demo.member.MemberService;
-import hello.demo.member.MemberServiceImpl;
 
 public class OrderApp {
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
-        OrderService orderService = new OrderServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.MemberService();
+        OrderService orderService = appConfig.OrderService();
 
         Long memberId = 1L;
         Member member = new Member(memberId, "memberA", Grade.VIP);
