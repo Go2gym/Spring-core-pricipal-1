@@ -3,7 +3,7 @@ package hello.demo.discount;
 import hello.demo.member.Grade;
 import hello.demo.member.Member;
 
-public class FixDiscountPolicy implements DiscoundPolicy {
+public class FixDiscountPolicy implements DiscountPolicy {
 
     private int discountFixAmount = 1000;
 

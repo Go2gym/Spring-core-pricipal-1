@@ -1,15 +1,15 @@
 package hello.demo.order;
 
-import hello.demo.discount.DiscoundPolicy;
+import hello.demo.discount.DiscountPolicy;
 import hello.demo.member.Member;
 import hello.demo.member.MemberRepository;
 
 public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository memberRepository;
-    private final DiscoundPolicy discountPolicy;
+    private final DiscountPolicy discountPolicy;
     
-    public OrderServiceImpl(MemberRepository memberRepository, DiscoundPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
