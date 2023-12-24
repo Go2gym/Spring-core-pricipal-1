@@ -3,6 +3,9 @@ package hello.demo.member;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Component;
+
+@Component //MemoryMemberRepository -> memoryMemberReposiotry(빈등록시)
 public class MemoryMemberRepository implements MemberRepository {
     
     private static Map<Long, Member> store = new HashMap<>();
