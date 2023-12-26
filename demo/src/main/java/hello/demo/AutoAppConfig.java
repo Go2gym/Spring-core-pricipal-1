@@ -14,8 +14,10 @@ import hello.demo.member.MemoryMemberRepository;
 )
 public class AutoAppConfig {
     
+/*
     @Bean(name = "memoryMemberRepository")
     MemberRepository memberRepository() {
         return new MemoryMemberRepository();
     }
+*/    
 }
