@@ -3,10 +3,13 @@ package hello.demo.order;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import hello.demo.AppConfig;
+import hello.demo.discount.DiscountPolicy;
 import hello.demo.member.Grade;
 import hello.demo.member.Member;
+import hello.demo.member.MemberRepository;
 import hello.demo.member.MemberService;
 
 public class OrderServiceTest {
