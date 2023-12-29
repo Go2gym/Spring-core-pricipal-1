@@ -1,5 +1,6 @@
 package hello.demo.discount;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import hello.demo.member.Grade;
