@@ -12,7 +12,6 @@ import hello.demo.member.MemoryMemberRepository;
 import hello.demo.order.OrderService;
 import hello.demo.order.OrderServiceImpl;
 
-@Configuration
 public class AppConfig {
     
     @Bean
